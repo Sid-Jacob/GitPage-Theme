@@ -1,0 +1,41 @@
+<!-- TODO：美化界面 -->
+
+<% if (site.categories.length){ %>
+    <div class="category-block">
+        <h3 class="asidetitle">
+            <%= __(page.title) %>
+        </h3>
+        <span class="category-text">
+            <%- list_categories(site.categories) %>
+        </span>
+    </div>
+    <% } %>
+
+
+        <!-- 分类列表 -->
+
+        <!-- <% site.categories.map(function(category){ %>
+    <div class="one-category-list">
+        <span class="fa fa-category listing-seperator" id="<%= category.name %>">
+            <span class="category-text">
+                <%= category.name %>
+            </span>
+        </span>
+        <% category.posts.map(function(post){ %>
+            <div class="post-preview">
+                <a href="<%- config.root %><%- post.path %>">
+                    <h2 class="post-title">
+                        <%- (post.title || "Untitled" ).replace(/[<>&"]/g,function(c){
+                            return {'<':'&lt;','>':'&gt;','&':'&amp;','"':'&quot;'}[c];
+                                }) %>
+                    </h2>
+                    <% if (post.subtitle && post.subtitle.length) { %>
+                        <h3 class="post-subtitle">
+                            <%- post.subtitle %>
+                        </h3>
+                        <% } %>
+                </a>
+            </div>
+            <% }) %>
+    </div>
+    <% }) %> -->

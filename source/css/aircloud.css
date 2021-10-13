@@ -582,6 +582,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+.post-container .post-content img{
+  /* width:expression(this.width>this.height ? 100%:auto);
+  height:expression(this.width>this.scrollHeight  ? auto:100%); */
+
+  max-width: 100%;
+  
+}
+
 .post-container .post-title {
   width: 100%;
   text-align: center;
