@@ -1,6 +1,7 @@
 nav:
   home: 主页
   tags: 标签
+  categories: 分类
   archives: 存档
   about: 关于
   search: 搜索
@@ -8,9 +9,9 @@ nav:
 post:
   postTime: 发布于
   tags: 标签
+  categories: 分类
   visit: 访问
   donate: 赞赏
 
 search:
   search: 搜索
-
